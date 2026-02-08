@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Civil Engineering Insight Studio</title>
+</head>
+
+<body>
+<h2>Civil Engineering Insight Studio</h2>
+
+<form action="/analyze" method="post" enctype="multipart/form-data">
+
+    <input type="file" name="image" required>
+    <button type="submit">Analyze</button>
+
+</form>
+
+{% if result %}
+<h3>Result:</h3>
+<p>{{ result }}</p>
+{% endif %}
+
+</body>
+</html>
